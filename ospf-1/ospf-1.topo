@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="12480FAF-BEA8-4a15-9CFE-CCFDCD6458CA" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-EE-43-F2" com_port="2001" bootmode="0" cx="721.000000" cy="365.000000" edit_left="748" edit_top="419">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="51E3387E-8E6E-4d1e-9AAD-4E6BB3517566" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-DC-5B-2B" com_port="2000" bootmode="0" cx="336.000000" cy="366.000000" edit_left="363" edit_top="420">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="51E3387E-8E6E-4d1e-9AAD-4E6BB3517566" destDeviceID="12480FAF-BEA8-4a15-9CFE-CCFDCD6458CA">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="406.183624" srcBoundRect_Y="392.887848" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="704.816406" tarBoundRect_Y="392.112152" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="272" top="229" right="465" bottom="355" content="sys&#x0D;&#x0A;sys R1&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 12.0.0.1 24&#x0D;&#x0A;&#x0D;&#x0A;ospf 1 router-id 1.1.1.1&#x0D;&#x0A;are 0&#x0D;&#x0A;net 12.0.0.0 0.0.0.255" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="627" top="225" right="820" bottom="351" content="sys&#x0D;&#x0A;sys R2&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 12.0.0.2 24&#x0D;&#x0A;&#x0D;&#x0A;ospf 1 router-id 2.2.2.2&#x0D;&#x0A;are 0&#x0D;&#x0A;net 12.0.0.0 0.0.0.255" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="311" top="472" right="481" bottom="520" content="dis ospf bri&#x0D;&#x0A;dis ospf peer b&#x0D;&#x0A;&lt;R2&gt;reset ospf process" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

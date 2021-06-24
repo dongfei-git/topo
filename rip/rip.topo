@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="83D37C77-94D7-42ed-941F-B5EAA30123FE" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-F2-05-A7" com_port="2001" bootmode="0" cx="693.000000" cy="209.000000" edit_left="720" edit_top="263">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="7D240A40-370E-4dc4-934E-91D482F19CA0" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-DA-20-1A" com_port="2000" bootmode="0" cx="373.000000" cy="210.000000" edit_left="400" edit_top="264">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="7D240A40-370E-4dc4-934E-91D482F19CA0" destDeviceID="83D37C77-94D7-42ed-941F-B5EAA30123FE">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="443.183563" srcBoundRect_Y="236.865051" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="676.816467" tarBoundRect_Y="236.134949" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="516" top="202" right="603" bottom="219" content="12.0.0.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="316" top="89" right="463" bottom="184" content="sys&#x0D;&#x0A;sys R1&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 12.0.0.1 24&#x0D;&#x0A;int lo 1&#x0D;&#x0A;ip add 1.1.1.1 24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="681" top="91" right="828" bottom="186" content="sys&#x0D;&#x0A;sys R2&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 12.0.0.2 24&#x0D;&#x0A;int lo 2&#x0D;&#x0A;ip add 2.2.2.2 24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="329" top="302" right="431" bottom="366" content="rip 1&#x0D;&#x0A;ver 2&#x0D;&#x0A;net 12.0.0.0&#x0D;&#x0A;net 1.0.0.0" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="680" top="307" right="782" bottom="371" content="rip 1&#x0D;&#x0A;ver 2&#x0D;&#x0A;net 12.0.0.0&#x0D;&#x0A;net 2.0.0.0" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="27" top="49" right="250" bottom="144" content="int g0/0/0&#x0D;&#x0A;rip split-horizon  水平分割&#x0D;&#x0A;rip poison-reverse  毒性逆转&#x0D;&#x0A;&#x0D;&#x0A;rip 1&#x0D;&#x0A;undo summary" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
