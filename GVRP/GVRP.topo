@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="C571259B-7991-47ef-9868-A33B5F5612EA" name="LSW1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-CD-38-FD" com_port="2002" bootmode="0" cx="233.000000" cy="344.000000" edit_left="260" edit_top="398">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="158BBB0C-E145-43e9-919F-01F73FE72F6F" name="LSW2" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-89-1B-5B" com_port="2003" bootmode="0" cx="512.000000" cy="347.000000" edit_left="539" edit_top="401">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="22EC93E7-430D-431e-A471-DE06C92EE2C4" name="LSW3" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-AD-09-BC" com_port="2004" bootmode="0" cx="803.000000" cy="348.000000" edit_left="830" edit_top="402">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="C571259B-7991-47ef-9868-A33B5F5612EA" destDeviceID="158BBB0C-E145-43e9-919F-01F73FE72F6F">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="303.181274" srcBoundRect_Y="371.464325" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="495.818726" tarBoundRect_Y="373.535675" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="158BBB0C-E145-43e9-919F-01F73FE72F6F" destDeviceID="22EC93E7-430D-431e-A471-DE06C92EE2C4">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="582.183533" srcBoundRect_Y="374.148407" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="786.816467" tarBoundRect_Y="374.851593" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips />
+</topo>
