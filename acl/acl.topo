@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="53E68597-E750-439d-8B54-DCF87532AB0C" name="PC2" poe="0" model="PC" settings=" -simpc_ip 2.0.0.253  -simpc_mask 255.255.255.0  -simpc_gateway 2.0.0.254  -simpc_mac 54-89-98-9B-80-B5  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 1  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 1  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-9B-80-B5" com_port="0" bootmode="0" cx="810.000000" cy="243.000000" edit_left="837" edit_top="297">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="607DCC97-5B46-439d-BCC5-156921275D00" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-9F-0E-CE" com_port="2003" bootmode="0" cx="499.000000" cy="244.000000" edit_left="526" edit_top="298">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="720C8193-D070-41d9-94F8-27F5A059411D" name="PC1" poe="0" model="PC" settings=" -simpc_ip 1.0.0.253  -simpc_mask 255.255.255.0  -simpc_gateway 1.0.0.254  -simpc_mac 54-89-98-42-3E-CF  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 1  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 1  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-42-3E-CF" com_port="0" bootmode="0" cx="227.000000" cy="245.000000" edit_left="254" edit_top="299">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="720C8193-D070-41d9-94F8-27F5A059411D" destDeviceID="607DCC97-5B46-439d-BCC5-156921275D00">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="297.183472" srcBoundRect_Y="271.841248" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="482.816528" tarBoundRect_Y="271.158752" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="607DCC97-5B46-439d-BCC5-156921275D00" destDeviceID="53E68597-E750-439d-8B54-DCF87532AB0C">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="569.183533" srcBoundRect_Y="270.861145" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="793.816467" tarBoundRect_Y="270.138855" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="166" top="89" right="955" bottom="184" content="acl number 2000  &#x0D;&#x0A; rule 100 permit source 1.1.1.1 0&#x0D;&#x0A;acl number 3000  &#x0D;&#x0A; rule 100 permit tcp source 1.1.1.1 0 source-port eq 8080 destination 2.2.2.2 0 destination-port eq 8080&#x0D;&#x0A;interface GigabitEthernet0/0/0&#x0D;&#x0A; traffic-filter inbound acl 3000" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="418" top="324" right="656" bottom="544" content="sys&#x0D;&#x0A;sys R1&#x0D;&#x0A;dhcp en&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 1.0.0.254 24&#x0D;&#x0A;dhcp sel int&#x0D;&#x0A;int g0/0/1&#x0D;&#x0A;ip add 2.0.0.254 24&#x0D;&#x0A;dhcp sel int&#x0D;&#x0A;&#x0D;&#x0A;acl 2000&#x0D;&#x0A;rule deny so 1.0.0.253 0&#x0D;&#x0A;int g0/0/0 &#x0D;&#x0A;traffic-filter inbound acl 2000" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
