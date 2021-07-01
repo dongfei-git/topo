@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="FB7009B9-3777-4129-A9D0-56CC88D32AF4" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-9B-25-29" com_port="2004" bootmode="0" cx="431.000000" cy="21.000000" edit_left="458" edit_top="75">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="3" type="521" />
+        </dev>
+        <dev id="AC2524C2-381D-4c5a-A897-6F5E8EBBA09A" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-AC-58-4B" com_port="2003" bootmode="0" cx="91.000000" cy="20.000000" edit_left="118" edit_top="74">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="3" type="521" />
+        </dev>
+        <dev id="B88AD61E-61F1-4381-8741-38B92D2848B3" name="AR3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-31-11-EB" com_port="2005" bootmode="0" cx="46.000000" cy="347.000000" edit_left="73" edit_top="401">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="3" type="521" />
+        </dev>
+        <dev id="E5134131-F857-4dd1-86E6-A5655143B873" name="AR4" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-1B-0A-BE" com_port="2006" bootmode="0" cx="405.000000" cy="348.000000" edit_left="432" edit_top="402">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+                <interface sztype="Serial" interfacename="Serial" count="2" />
+            </slot>
+            <slot isMainBoard="0" id="3" type="521" />
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="AC2524C2-381D-4c5a-A897-6F5E8EBBA09A" destDeviceID="FB7009B9-3777-4129-A9D0-56CC88D32AF4">
+            <interfacePair lineName="Serial" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="161.183578" srcBoundRect_Y="47.127010" srcOffset_X="-12.000000" srcOffset_Y="9.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="414.816406" tarBoundRect_Y="47.872990" tarOffset_X="-39.000000" tarOffset_Y="8.000000" />
+        </line>
+        <line srcDeviceID="B88AD61E-61F1-4381-8741-38B92D2848B3" destDeviceID="E5134131-F857-4dd1-86E6-A5655143B873">
+            <interfacePair lineName="Serial" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="116.183601" srcBoundRect_Y="374.120300" srcOffset_X="-6.000000" srcOffset_Y="6.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="388.816406" tarBoundRect_Y="374.879700" tarOffset_X="-37.000000" tarOffset_Y="8.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="51" top="98" right="198" bottom="193" content="sys&#x0D;&#x0A;sys R1&#x0D;&#x0A;int s4/0/0&#x0D;&#x0A;ip add 1.0.0.1 24&#x0D;&#x0A;link-protocol hdlc&#x0D;&#x0A;y" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="392" top="99" right="539" bottom="194" content="sys&#x0D;&#x0A;sys R2&#x0D;&#x0A;int s4/0/0&#x0D;&#x0A;ip add 1.0.0.2 24&#x0D;&#x0A;link-protocol hdlc&#x0D;&#x0A;y" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="51" top="213" right="349" bottom="277" content="地址租用&#x0D;&#x0A;int s4/0/1&#x0D;&#x0A;ip address unnumbered interface s4/0/0&#x0D;&#x0A;ip route-static 1.0.0.2 32 s4/0/1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="50" top="444" right="197" bottom="523" content="sys&#x0D;&#x0A;sys R3&#x0D;&#x0A;int s4/0/0&#x0D;&#x0A;ip add 12.0.0.1 24&#x0D;&#x0A;link-protocol ppp" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="367" top="439" right="514" bottom="518" content="sys&#x0D;&#x0A;sys R4&#x0D;&#x0A;int s4/0/0&#x0D;&#x0A;ip add 12.0.0.2 24&#x0D;&#x0A;link-protocol ppp" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="51" top="536" right="417" bottom="693" content="PAP认证&#x0D;&#x0A;sys&#x0D;&#x0A;sys R3&#x0D;&#x0A;int s4/0/0&#x0D;&#x0A;ppp authentication-mode pap&#x0D;&#x0A;aaa&#x0D;&#x0A;local-user admin password cipher 123.com&#x0D;&#x0A;local-user admin service-type ppp&#x0D;&#x0A;int s4/0/0&#x0D;&#x0A;ppp pap local-user admin password cipher 123.com" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="52" top="704" right="418" bottom="846" content="sys&#x0D;&#x0A;sys R4&#x0D;&#x0A;int s4/0/0&#x0D;&#x0A;ppp authentication-mode pap&#x0D;&#x0A;aaa&#x0D;&#x0A;local-user admin password cipher 123.com&#x0D;&#x0A;local-user admin service-type ppp&#x0D;&#x0A;int s4/0/0&#x0D;&#x0A;ppp pap local-user admin password cipher 123.com" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="434" top="536" right="748" bottom="709" content="CHAP认证&#x0D;&#x0A;sys&#x0D;&#x0A;sys R3&#x0D;&#x0A;int s4/0/0&#x0D;&#x0A;ppp authentication-mode chap&#x0D;&#x0A;aaa&#x0D;&#x0A;local-user admin password cipher 123.com&#x0D;&#x0A;local-user admin service-type ppp&#x0D;&#x0A;int s4/0/0&#x0D;&#x0A;ppp chap user admin&#x0D;&#x0A;ppp chap password cipher 123.com" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="436" top="722" right="750" bottom="879" content="sys&#x0D;&#x0A;sys R4&#x0D;&#x0A;int s4/0/0&#x0D;&#x0A;ppp authentication-mode chap&#x0D;&#x0A;aaa&#x0D;&#x0A;local-user admin password cipher 123.com&#x0D;&#x0A;local-user admin service-type ppp&#x0D;&#x0A;int s4/0/0&#x0D;&#x0A;ppp chap user admin&#x0D;&#x0A;ppp chap password cipher 123.com" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
