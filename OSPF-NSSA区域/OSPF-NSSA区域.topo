@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="5EFC0A5A-B24E-44f2-BEC7-DD3DA346C4B9" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-AA-29-7F" com_port="2004" bootmode="0" cx="540.000000" cy="410.000000" edit_left="567" edit_top="464">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="EF7EB69E-9678-4792-B59B-958531EA79D5" name="AR3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-76-09-FD" com_port="2003" bootmode="0" cx="765.000000" cy="410.000000" edit_left="792" edit_top="464">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="B42AEDBD-DB68-4156-8669-0BBA29DDE762" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-DB-1E-3A" com_port="2005" bootmode="0" cx="351.000000" cy="410.000000" edit_left="378" edit_top="464">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="5EFC0A5A-B24E-44f2-BEC7-DD3DA346C4B9" destDeviceID="EF7EB69E-9678-4792-B59B-958531EA79D5">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="610.183777" srcBoundRect_Y="437.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="748.816223" tarBoundRect_Y="437.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="B42AEDBD-DB68-4156-8669-0BBA29DDE762" destDeviceID="5EFC0A5A-B24E-44f2-BEC7-DD3DA346C4B9">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="421.183777" srcBoundRect_Y="437.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="523.816223" tarBoundRect_Y="437.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="2" filloption="1" color="8454143" upleftcorner="570,314" width="330" height="242" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="2" filloption="1" color="16744448" upleftcorner="269,324" width="300" height="224" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+    </shapes>
+    <txttips>
+        <txttip left="866" top="374" right="1059" bottom="563" content="sys&#x0D;&#x0A;sys R3&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 23.0.0.3 24&#x0D;&#x0A;int lo 0&#x0D;&#x0A;ip add 9.9.9.9 24&#x0D;&#x0A;&#x0D;&#x0A;ospf 1 router-id 3.3.3.3&#x0D;&#x0A;import-route direct&#x0D;&#x0A;a 1&#x0D;&#x0A;net 23.0.0.3 0.0.0.0&#x0D;&#x0A;nssa" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="466" top="531" right="659" bottom="735" content="sys&#x0D;&#x0A;sys R2&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 12.0.0.2 24&#x0D;&#x0A;int g0/0/1&#x0D;&#x0A;ip add 23.0.0.2 24&#x0D;&#x0A;&#x0D;&#x0A;ospf 1 router-id 2.2.2.2&#x0D;&#x0A;a 0&#x0D;&#x0A;net 12.0.0.2 0.0.0.0&#x0D;&#x0A;a 1&#x0D;&#x0A;net 23.0.0.2 0.0.0.0&#x0D;&#x0A;nssa no-summary" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="698" top="497" right="762" bottom="514" content="NSSAÇøÓò" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="706" top="367" right="755" bottom="384" content="Area 1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="70" top="283" right="263" bottom="596" content="sys&#x0D;&#x0A;sys R1&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 12.0.0.1 24&#x0D;&#x0A;&#x0D;&#x0A;ospf 1 router-id 1.1.1.1&#x0D;&#x0A;a 0&#x0D;&#x0A;net 12.0.0.1 0.0.0.0&#x0D;&#x0A;&#x0D;&#x0A;int lo 0&#x0D;&#x0A;ip add 172.17.0.1 24&#x0D;&#x0A;int lo 1&#x0D;&#x0A;ip add 172.17.1.1 24&#x0D;&#x0A;int lo 2&#x0D;&#x0A;ip add 172.17.2.1 24&#x0D;&#x0A;int lo 3&#x0D;&#x0A;ip add 172.17.3.1 24&#x0D;&#x0A;&#x0D;&#x0A;ospf 1&#x0D;&#x0A;import-route direct" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="401" top="362" right="450" bottom="379" content="Area 0" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
