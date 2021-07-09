@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="3A01D780-CDAC-4ea6-A521-3507A5F8F5A5" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-FA-52-C8" com_port="2005" bootmode="0" cx="182.000000" cy="146.000000" edit_left="209" edit_top="200">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="2A8C40FA-079F-4b45-80B6-4D03CBC5BD54" name="AR3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-03-47-A7" com_port="2003" bootmode="0" cx="766.000000" cy="146.000000" edit_left="793" edit_top="200">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="8F18723C-C3DE-4ece-82B9-697883A6B536" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-34-3D-61" com_port="2004" bootmode="0" cx="391.000000" cy="146.000000" edit_left="418" edit_top="200">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="8F18723C-C3DE-4ece-82B9-697883A6B536" destDeviceID="2A8C40FA-079F-4b45-80B6-4D03CBC5BD54">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="461.183777" srcBoundRect_Y="173.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="749.816223" tarBoundRect_Y="173.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="3A01D780-CDAC-4ea6-A521-3507A5F8F5A5" destDeviceID="8F18723C-C3DE-4ece-82B9-697883A6B536">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="252.183762" srcBoundRect_Y="173.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="374.816223" tarBoundRect_Y="173.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="1" filloption="1" color="4259584" upleftcorner="659,105" width="247" height="176" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="1" color="4259584" upleftcorner="775,240" width="38" height="3" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="1" color="16777088" upleftcorner="126,106" width="388" height="171" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+    </shapes>
+    <txttips>
+        <txttip left="684" top="296" right="922" bottom="516" content="sys&#x0D;&#x0A;sys R3&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 23.0.0.3 24&#x0D;&#x0A;int lo 3&#x0D;&#x0A;ip add 3.3.3.3 32&#x0D;&#x0A;&#x0D;&#x0A;ip route-s 2.2.2.2 32 23.0.0.2&#x0D;&#x0A;&#x0D;&#x0A;bgp 3&#x0D;&#x0A;router-id 3.3.3.3&#x0D;&#x0A;peer 2.2.2.2 as 12&#x0D;&#x0A;peer 2.2.2.2 con lo 3&#x0D;&#x0A;peer 2.2.2.2 ebgp-max-hop" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="774" top="125" right="808" bottom="142" content="AS 3" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="343" top="285" right="664" bottom="661" content="sys&#x0D;&#x0A;sys R2&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 12.0.0.2 24&#x0D;&#x0A;int g0/0/1&#x0D;&#x0A;ip add 23.0.0.2 24&#x0D;&#x0A;int lo 2&#x0D;&#x0A;ip add 2.2.2.2 32&#x0D;&#x0A;&#x0D;&#x0A;ospf 1 router-id 2.2.2.2&#x0D;&#x0A;a 0&#x0D;&#x0A;net 12.0.0.2 0.0.0.0&#x0D;&#x0A;net 2.2.2.2 0.0.0.0&#x0D;&#x0A;&#x0D;&#x0A;ip route-s 3.3.3.3 32 23.0.0.3&#x0D;&#x0A;&#x0D;&#x0A;bgp 12&#x0D;&#x0A;router-id 2.2.2.2&#x0D;&#x0A;peer 1.1.1.1 as 12&#x0D;&#x0A;peer 1.1.1.1 connect-interface LoopBack 2&#x0D;&#x0A;peer 1.1.1.1 password cipher 123.com&#x0D;&#x0A;peer 3.3.3.3 as 3&#x0D;&#x0A;peer 3.3.3.3 con lo 2&#x0D;&#x0A;peer 3.3.3.3 ebgp-max-hop" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="12" top="284" right="333" bottom="551" content="sys&#x0D;&#x0A;sys R1&#x0D;&#x0A;int g0/0/0 &#x0D;&#x0A;ip add 12.0.0.1 24&#x0D;&#x0A;int lo 1&#x0D;&#x0A;ip add 1.1.1.1 32&#x0D;&#x0A;&#x0D;&#x0A;ospf 1 router-id 1.1.1.1&#x0D;&#x0A;a 0&#x0D;&#x0A;net 12.0.0.1 0.0.0.0&#x0D;&#x0A;net 1.1.1.1 0.0.0.0&#x0D;&#x0A;&#x0D;&#x0A;bgp 12&#x0D;&#x0A;router-id 1.1.1.1&#x0D;&#x0A;peer 2.2.2.2 as 12&#x0D;&#x0A;peer 2.2.2.2 connect-interface LoopBack 1&#x0D;&#x0A;peer 2.2.2.2 password cipher 123.com" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="309" top="131" right="351" bottom="148" content="AS 12" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

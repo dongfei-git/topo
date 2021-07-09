@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="ED69EC61-4E3A-402d-8F99-AB40D9DF4FCC" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-18-37-88" com_port="2004" bootmode="0" cx="1152.000000" cy="727.000000" edit_left="1179" edit_top="781">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="F5462008-A878-4103-A3DB-26364A5DE953" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-23-14-A0" com_port="2003" bootmode="0" cx="764.000000" cy="727.000000" edit_left="791" edit_top="781">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="F5462008-A878-4103-A3DB-26364A5DE953" destDeviceID="ED69EC61-4E3A-402d-8F99-AB40D9DF4FCC">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="834.183777" srcBoundRect_Y="754.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="1135.816284" tarBoundRect_Y="754.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="697" top="802" right="890" bottom="928" content="sys&#x0D;&#x0A;sys R1&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 12.0.0.1 24&#x0D;&#x0A;&#x0D;&#x0A;ospf 1 router-id 1.1.1.1&#x0D;&#x0A;a 0&#x0D;&#x0A;net 12.0.0.1 0.0.0.0" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1090" top="802" right="1283" bottom="928" content="sys&#x0D;&#x0A;sys R2&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 12.0.0.2 24&#x0D;&#x0A;&#x0D;&#x0A;ospf 1 router-id 2.2.2.2&#x0D;&#x0A;a 0&#x0D;&#x0A;net 12.0.0.2 0.0.0.0" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="675" top="626" right="928" bottom="721" content="¾²Ì¬Â·ÓÉ&#x0D;&#x0A;192.168.0.0/16&#x0D;&#x0A;192.168.0.0/24&#x0D;&#x0A;&#x0D;&#x0A;ip route-s 192.168.0.0 16 NULL 0&#x0D;&#x0A;ip route-s 192.168.0.0 24 NULL 0" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="669" top="951" right="960" bottom="1015" content="ip ip-prefix p1 permit 192.168.0.0 16&#x0D;&#x0A;ospf 1&#x0D;&#x0A;filter-policy ip-prefix p1 export&#x0D;&#x0A;import-route static" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

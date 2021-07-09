@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="8273BC33-A8EA-4697-8D27-4141B1220B12" name="AR4" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-C9-61-02" com_port="2006" bootmode="0" cx="166.363632" cy="306.272736" edit_left="193" edit_top="360">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="37D6B23D-810F-487f-AA43-179E1F17206C" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-1B-27-AA" com_port="2004" bootmode="0" cx="322.727264" cy="306.909088" edit_left="349" edit_top="360">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="AE79FC53-2DD2-424b-8403-39D0C265F498" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-1D-3D-96" com_port="2003" bootmode="0" cx="484.545441" cy="306.272736" edit_left="511" edit_top="360">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="B49EFA3A-F994-4414-8AEF-6214BE7EB86A" name="AR3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-40-5E-64" com_port="2005" bootmode="0" cx="770.909058" cy="306.363617" edit_left="797" edit_top="360">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="AE79FC53-2DD2-424b-8403-39D0C265F498" destDeviceID="B49EFA3A-F994-4414-8AEF-6214BE7EB86A">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="554.183777" srcBoundRect_Y="333.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="753.816223" tarBoundRect_Y="333.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="AE79FC53-2DD2-424b-8403-39D0C265F498" destDeviceID="37D6B23D-810F-487f-AA43-179E1F17206C">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="467.816223" srcBoundRect_Y="333.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="392.183777" tarBoundRect_Y="333.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="37D6B23D-810F-487f-AA43-179E1F17206C" destDeviceID="8273BC33-A8EA-4697-8D27-4141B1220B12">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="305.816223" srcBoundRect_Y="333.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="236.183762" tarBoundRect_Y="333.000000" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="1" filloption="1" color="16744448" upleftcorner="112,209" width="441" height="258" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="1" color="8454143" upleftcorner="607,211" width="372" height="258" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+    </shapes>
+    <txttips>
+        <txttip left="298" top="237" right="340" bottom="254" content="AS 12" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="783" top="232" right="817" bottom="249" content="AS 3" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="377" top="477" right="834" bottom="822" content="sys&#x0D;&#x0A;sys R1&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 13.0.0.1 24&#x0D;&#x0A;int g0/0/1&#x0D;&#x0A;ip add 12.0.0.1 24&#x0D;&#x0A;int lo 1&#x0D;&#x0A;ip add 1.1.1.1 32&#x0D;&#x0A;&#x0D;&#x0A;ospf 1 router-id 1.1.1.1&#x0D;&#x0A;a 0&#x0D;&#x0A;net 12.0.0.1 0.0.0.0&#x0D;&#x0A;net 1.1.1.1 0.0.0.0&#x0D;&#x0A;&#x0D;&#x0A;bgp 12&#x0D;&#x0A;router-id 1.1.1.1&#x0D;&#x0A;peer 2.2.2.2 as-num 12&#x0D;&#x0A;peer 2.2.2.2 con lo 1&#x0D;&#x0A;peer 2.2.2.2 next-hop-local&#x0D;&#x0A;peer 13.0.0.3 as-num 3&#x0D;&#x0A;peer 13.0.0.3 ebgp-max-hop&#x0D;&#x0A;aggregate 192.168.0.0 255.255.252.0 detail-suppressed as-set" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="174" top="479" right="367" bottom="777" content="sys&#x0D;&#x0A;sys R2&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 12.0.0.2 24&#x0D;&#x0A;int g0/0/1&#x0D;&#x0A;ip add 24.0.0.2 24&#x0D;&#x0A;int lo 2&#x0D;&#x0A;ip add 2.2.2.2 32&#x0D;&#x0A;&#x0D;&#x0A;ospf 1 router-id 2.2.2.2&#x0D;&#x0A;a 0&#x0D;&#x0A;net 12.0.0.2 0.0.0.0&#x0D;&#x0A;net 24.0.0.2 0.0.0.0&#x0D;&#x0A;net 2.2.2.2 0.0.0.0&#x0D;&#x0A;&#x0D;&#x0A;bgp 12&#x0D;&#x0A;router-id 2.2.2.2&#x0D;&#x0A;peer 1.1.1.1 as-num 12&#x0D;&#x0A;peer 1.1.1.1 con lo 2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1000" top="324" right="1336" bottom="762" content="sys&#x0D;&#x0A;sys R3&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 13.0.0.3 24&#x0D;&#x0A;&#x0D;&#x0A;bgp 3&#x0D;&#x0A;router-id 3.3.3.3&#x0D;&#x0A;peer 13.0.0.1 as-num 12&#x0D;&#x0A;&#x0D;&#x0A;int lo 0&#x0D;&#x0A;ip add 192.168.0.1 24&#x0D;&#x0A;int lo 1&#x0D;&#x0A;ip add 192.168.1.1 24&#x0D;&#x0A;int lo 2&#x0D;&#x0A;ip add 192.168.2.1 24&#x0D;&#x0A;int lo 3&#x0D;&#x0A;ip add 192.168.3.1 24&#x0D;&#x0A;&#x0D;&#x0A;acl 2000&#x0D;&#x0A;rule permit so 192.168.0.0 0&#x0D;&#x0A;rule permit so 192.168.1.0 0&#x0D;&#x0A;rule permit so 192.168.2.0 0&#x0D;&#x0A;rule permit so 192.168.3.0 0&#x0D;&#x0A;route-policy bgp_dir_imp permit node 10&#x0D;&#x0A;if-match acl 2000&#x0D;&#x0A;&#x0D;&#x0A;bgp 3&#x0D;&#x0A;import-route direct route-policy bgp_dir_imp" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
