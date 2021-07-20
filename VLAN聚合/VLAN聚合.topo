@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="D7763A1D-E8E8-421e-BD45-C8777A74EA89" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-FF-24-C2" com_port="2003" bootmode="0" cx="876.818176" cy="364.545441" edit_left="950" edit_top="383">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="8326F519-55C3-43a9-A755-780FF6A753D8" name="PC2" poe="0" model="PC" settings=" -simpc_ip 192.168.0.20  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.0.254  -simpc_mac 54-89-98-79-71-05  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-79-71-05" com_port="0" bootmode="0" cx="991.818176" cy="736.363647" edit_left="1018" edit_top="790">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="981ED995-C941-46c9-AF73-E7B2623BD119" name="LSW1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-44-29-D5" com_port="2004" bootmode="0" cx="876.363647" cy="548.181824" edit_left="950" edit_top="570">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="679998A6-4D04-4d96-959D-7DA4C7D65674" name="PC1" poe="0" model="PC" settings=" -simpc_ip 192.168.0.10  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.0.254  -simpc_mac 54-89-98-8B-58-2A  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-8B-58-2A" com_port="0" bootmode="0" cx="744.545410" cy="736.727234" edit_left="771" edit_top="790">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="679998A6-4D04-4d96-959D-7DA4C7D65674" destDeviceID="981ED995-C941-46c9-AF73-E7B2623BD119">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="795.814697" srcBoundRect_Y="727.657837" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="878.185303" tarBoundRect_Y="610.342163" tarOffset_X="-51.000000" tarOffset_Y="-3.000000" />
+        </line>
+        <line srcDeviceID="8326F519-55C3-43a9-A755-780FF6A753D8" destDeviceID="981ED995-C941-46c9-AF73-E7B2623BD119">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="995.466003" srcBoundRect_Y="726.161743" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="925.533997" tarBoundRect_Y="611.838257" tarOffset_X="7.000000" tarOffset_Y="-2.000000" />
+        </line>
+        <line srcDeviceID="981ED995-C941-46c9-AF73-E7B2623BD119" destDeviceID="D7763A1D-E8E8-421e-BD45-C8777A74EA89">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="0" srcBoundRect_X="903.000000" srcBoundRect_Y="531.816223" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="903.000000" tarBoundRect_Y="434.183777" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="1" filloption="1" color="16744448" upleftcorner="639,676" width="253" height="172" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="1" color="8454143" upleftcorner="902,676" width="258" height="174" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+    </shapes>
+    <txttips>
+        <txttip left="707" top="815" right="786" bottom="832" content="sub vlan 2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="981" top="818" right="1060" bottom="835" content="sub vlan 3" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="800" top="478" right="879" bottom="495" content="12.0.0.0/8" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="878" top="338" right="935" bottom="355" content="1.1.1.1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="685" top="548" right="863" bottom="580" content="super vlan 10&#x0D;&#x0A;vlanif10: 192.168.0.254" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="486" top="329" right="732" bottom="377" content="要求：&#x0D;&#x0A;实现VLAN2和VLAN3到1.1.1.1的通信&#x0D;&#x0A;实现VLAN2和VLAN3间的通信" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1166" top="313" right="1389" bottom="423" content="sys&#x0D;&#x0A;sys R1&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 12.0.0.1 8&#x0D;&#x0A;int lo 1&#x0D;&#x0A;ip add 1.1.1.1 32&#x0D;&#x0A;ip route-s 0.0.0.0 0 12.0.0.2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1165" top="436" right="1448" bottom="812" content="sys&#x0D;&#x0A;sys SW1&#x0D;&#x0A;vlan batch 2 3 10 12&#x0D;&#x0A;int g0/0/3&#x0D;&#x0A;p l a&#x0D;&#x0A;p d v 12&#x0D;&#x0A;int vlanif 12&#x0D;&#x0A;ip add 12.0.0.2 8&#x0D;&#x0A;ip route-s 1.1.1.1 32 12.0.0.1&#x0D;&#x0A;&#x0D;&#x0A;vlan 10&#x0D;&#x0A;aggregate-vlan&#x0D;&#x0A;access-vlan 2 3&#x0D;&#x0A;&#x0D;&#x0A;int g0/0/1&#x0D;&#x0A;p l a&#x0D;&#x0A;p d v 2&#x0D;&#x0A;int g0/0/2&#x0D;&#x0A;p l a&#x0D;&#x0A;p d v 3&#x0D;&#x0A;&#x0D;&#x0A;int vlanif10&#x0D;&#x0A;ip add 192.168.0.254 24&#x0D;&#x0A;arp-proxy inter-sub-vlan-proxy enable" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
