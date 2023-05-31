@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="190494FD-A099-4772-A6B8-865910A53719" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-00-80-83" com_port="2001" bootmode="0" cx="465.000000" cy="71.000000" edit_left="491" edit_top="48">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="F91600DF-5646-4826-8414-DE7C85541386" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-03-58-AB" com_port="2000" bootmode="0" cx="290.000000" cy="264.000000" edit_left="335" edit_top="318">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="9FC62F8A-6414-4f79-9C9D-25AAA344BF3C" name="PC1" poe="0" model="PC" settings=" -simpc_ip 192.168.10.253  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.10.254  -simpc_mac 54-89-98-07-46-94  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 1  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 1  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-07-46-94" com_port="0" bootmode="0" cx="288.000000" cy="466.000000" edit_left="315" edit_top="520">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="0922546D-D96E-4707-9EEB-988C86481D10" name="AR3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-3C-5D-B6" com_port="2002" bootmode="0" cx="669.000000" cy="268.000000" edit_left="670" edit_top="322">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="327D8267-9B61-4106-A181-4DE55F9CA16F" name="PC2" poe="0" model="PC" settings=" -simpc_ip 192.168.20.253  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.20.254  -simpc_mac 54-89-98-41-2E-02  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 1  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 1  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-41-2E-02" com_port="0" bootmode="0" cx="680.000000" cy="478.000000" edit_left="707" edit_top="532">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="9FC62F8A-6414-4f79-9C9D-25AAA344BF3C" destDeviceID="F91600DF-5646-4826-8414-DE7C85541386">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="315.427551" srcBoundRect_Y="449.818359" srcOffset_X="15.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="316.572449" tarBoundRect_Y="334.181641" tarOffset_X="5.000000" tarOffset_Y="6.000000" />
+        </line>
+        <line srcDeviceID="F91600DF-5646-4826-8414-DE7C85541386" destDeviceID="190494FD-A099-4772-A6B8-865910A53719">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="346.007263" srcBoundRect_Y="259.009125" srcOffset_X="6.000000" srcOffset_Y="-3.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="462.992737" tarBoundRect_Y="129.990875" tarOffset_X="-70.000000" tarOffset_Y="-2.000000" />
+        </line>
+        <line srcDeviceID="190494FD-A099-4772-A6B8-865910A53719" destDeviceID="0922546D-D96E-4707-9EEB-988C86481D10">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="523.063843" srcBoundRect_Y="127.997925" srcOffset_X="17.000000" srcOffset_Y="-1.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="664.936157" tarBoundRect_Y="265.002075" tarOffset_X="5.000000" tarOffset_Y="-13.000000" />
+        </line>
+        <line srcDeviceID="0922546D-D96E-4707-9EEB-988C86481D10" destDeviceID="327D8267-9B61-4106-A181-4DE55F9CA16F">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="0" srcBoundRect_X="698.258911" srcBoundRect_Y="338.124634" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="704.741089" tarBoundRect_Y="461.875366" tarOffset_X="12.000000" tarOffset_Y="1.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="1" filloption="1" color="8454143" upleftcorner="167,187" width="304" height="430" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="1" color="8421631" upleftcorner="532,187" width="304" height="430" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="2" filloption="1" color="16711935" upleftcorner="392,34" width="213" height="122" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="2" filloption="1" color="16711935" upleftcorner="715,228" width="0" height="0" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+    </shapes>
+    <txttips>
+        <txttip left="467" top="18" right="524" bottom="35" content="2.2.2.2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="48" top="40" right="324" bottom="135" content="实验要求:&#x0D;&#x0A;1. 配置IP地址、DHCP、路由、NAT&#x0D;&#x0A;2. 保证内网可以访问公网2.2.2.2&#x0D;&#x0A;3. 配置IPSec VPN或GRE over IPSec VPN&#x0D;&#x0A;4. 保证PC1可以直接访问PC2&#x0D;&#x0A;5. 抓包验证数据是否被加密" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="188" top="232" right="305" bottom="249" content="192.168.10.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="704" top="221" right="821" bottom="238" content="192.168.20.0/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="657" top="44" right="820" bottom="139" content="IPSec VPN配置步骤:&#x0D;&#x0A;  配置网络可达&#x0D;&#x0A;  配置ACL识别感兴趣流&#x0D;&#x0A;  创建安全提议&#x0D;&#x0A;  创建安全策略&#x0D;&#x0A;  应用安全策略" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="866" top="22" right="1406" bottom="694" content="sys&#x0D;&#x0A;sys R1&#x0D;&#x0A;dhcp enable&#x0D;&#x0A;acl 3001&#x0D;&#x0A;rule 1 deny ip dest 192.168.20.0 0.0.0.255&#x0D;&#x0A;rule 2 permit ip&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 192.168.10.254 24&#x0D;&#x0A;dhcp sel int&#x0D;&#x0A;int g0/0/1&#x0D;&#x0A;ip add 12.0.0.1 24&#x0D;&#x0A;nat outbound 3001&#x0D;&#x0A;&#x0D;&#x0A;ip route-s 0.0.0.0 0 12.0.0.2&#x0D;&#x0A;&#x0D;&#x0A;acl 3000&#x0D;&#x0A; rule 1 permit ip so 192.168.10.0 0.0.0.255 dest 192.168.20.0 0.0.0.255&#x0D;&#x0A;&#x0D;&#x0A;ike proposal 1&#x0D;&#x0A; encryption-algorithm aes-cbc-256&#x0D;&#x0A; dh group2&#x0D;&#x0A; authentication-algorithm md5&#x0D;&#x0A; sa duration 3600&#x0D;&#x0A;q&#x0D;&#x0A;ike peer toR2 v1&#x0D;&#x0A; pre-shared-key cipher abcdef&#x0D;&#x0A; ike-proposal 1&#x0D;&#x0A; local-address 12.0.0.1&#x0D;&#x0A; remote-address 23.0.0.3&#x0D;&#x0A;q&#x0D;&#x0A;ipsec proposal toR2&#x0D;&#x0A; esp authentication-algorithm sha2-256 &#x0D;&#x0A; esp encryption-algorithm aes-256&#x0D;&#x0A;q&#x0D;&#x0A;ipsec policy R1VPN 1 isakmp&#x0D;&#x0A; security acl 3000&#x0D;&#x0A; ike-peer toR2&#x0D;&#x0A; proposal toR2&#x0D;&#x0A;q&#x0D;&#x0A;int g0/0/1&#x0D;&#x0A; ipsec policy R1VPN&#x0D;&#x0A;&#x0D;&#x0A;" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="46" top="638" right="594" bottom="1389" content="sys&#x0D;&#x0A;sys R3&#x0D;&#x0A;dhcp enable&#x0D;&#x0A;acl 3001&#x0D;&#x0A;rule 1 deny ip dest 192.168.10.0 0.0.0.255&#x0D;&#x0A;rule 2 permit ip&#x0D;&#x0A;int g0/0/1&#x0D;&#x0A;ip add 192.168.20.254 24&#x0D;&#x0A;dhcp sel int&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 23.0.0.3 24&#x0D;&#x0A;nat outbound 3001&#x0D;&#x0A;&#x0D;&#x0A;ip route-s 0.0.0.0 0 23.0.0.2&#x0D;&#x0A;&#x0D;&#x0A;ipsec proposal toR1&#x0D;&#x0A;&#x09;encapsulation-mode tunnel&#x0D;&#x0A;&#x09;transform esp&#x0D;&#x0A;&#x09;esp encryption-algorithm aes-256&#x0D;&#x0A;dis ipsec proposal&#x0D;&#x0A;&#x0D;&#x0A;acl 3000&#x0D;&#x0A; rule 1 permit ip so 192.168.20.0 0.0.0.255 dest 192.168.10.0 0.0.0.255&#x0D;&#x0A;&#x0D;&#x0A;ike proposal 1&#x0D;&#x0A; encryption-algorithm aes-cbc-256&#x0D;&#x0A; dh group2&#x0D;&#x0A; authentication-algorithm md5&#x0D;&#x0A; sa duration 3600&#x0D;&#x0A;q&#x0D;&#x0A;ike peer toR1 v1&#x0D;&#x0A; pre-shared-key cipher abcdef&#x0D;&#x0A; ike-proposal 1&#x0D;&#x0A; local-address 23.0.0.3&#x0D;&#x0A; remote-address 12.0.0.1&#x0D;&#x0A;q&#x0D;&#x0A;ipsec proposal toR1&#x0D;&#x0A; esp authentication-algorithm sha2-256 &#x0D;&#x0A; esp encryption-algorithm aes-256&#x0D;&#x0A;q&#x0D;&#x0A;ipsec policy R2VPN 1 isakmp&#x0D;&#x0A; security acl 3000&#x0D;&#x0A; ike-peer toR1&#x0D;&#x0A; proposal toR1&#x0D;&#x0A;q&#x0D;&#x0A;&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;  ipsec policy R2VPN" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="427" top="172" right="574" bottom="298" content="sys&#x0D;&#x0A;sys R2&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 12.0.0.2 24&#x0D;&#x0A;int g0/0/1&#x0D;&#x0A;ip add 23.0.0.2 24&#x0D;&#x0A;int lo 2&#x0D;&#x0A;ip add 2.2.2.2 32" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
