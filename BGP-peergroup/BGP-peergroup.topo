@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="FB43A2A4-9156-4f08-81A5-F9F521647F1A" name="AR6" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-07-7C-C4" com_port="2005" bootmode="0" cx="63.000000" cy="16.000000" edit_left="90" edit_top="70">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="B282230E-3417-421b-8117-C64E1476106B" name="AR7" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-D0-7C-FC" com_port="2006" bootmode="0" cx="131.000000" cy="16.000000" edit_left="158" edit_top="70">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="DE3E0A82-87D6-4277-A8F4-BAFDA1393F4C" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-4F-7E-79" com_port="2001" bootmode="0" cx="347.000000" cy="266.000000" edit_left="374" edit_top="320">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="CF8F4B49-584C-4738-ACBE-C3D7854DD381" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-61-46-87" com_port="2000" bootmode="0" cx="113.000000" cy="266.000000" edit_left="140" edit_top="320">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="DEC98300-997A-4261-802D-E2C7B327CC43" name="AR4" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-A4-35-AE" com_port="2003" bootmode="0" cx="653.000000" cy="266.000000" edit_left="680" edit_top="320">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="56B3E6F7-C762-4c9c-AF0C-55EB5D9A4E52" name="AR5" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-AB-53-12" com_port="2004" bootmode="0" cx="870.000000" cy="266.000000" edit_left="897" edit_top="320">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="FE150340-BD35-4314-B63F-F01BB590FB69" name="AR8" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-50-01-C8" com_port="2007" bootmode="0" cx="502.000000" cy="462.000000" edit_left="529" edit_top="516">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="CB1161BD-5032-4680-89BA-AAD4582D2391" name="AR3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-E3-73-85" com_port="2002" bootmode="0" cx="502.000000" cy="111.000000" edit_left="529" edit_top="165">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="CF8F4B49-584C-4738-ACBE-C3D7854DD381" destDeviceID="DE3E0A82-87D6-4277-A8F4-BAFDA1393F4C">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="183.183762" srcBoundRect_Y="293.000000" srcOffset_X="-8.000000" srcOffset_Y="6.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="330.816223" tarBoundRect_Y="293.000000" tarOffset_X="-25.000000" tarOffset_Y="8.000000" />
+        </line>
+        <line srcDeviceID="DE3E0A82-87D6-4277-A8F4-BAFDA1393F4C" destDeviceID="CB1161BD-5032-4680-89BA-AAD4582D2391">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="404.535522" srcBoundRect_Y="262.464478" srcOffset_X="3.000000" srcOffset_Y="1.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="498.464478" tarBoundRect_Y="168.535538" tarOffset_X="-54.000000" tarOffset_Y="-10.000000" />
+        </line>
+        <line srcDeviceID="CB1161BD-5032-4680-89BA-AAD4582D2391" destDeviceID="DEC98300-997A-4261-802D-E2C7B327CC43">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="559.133789" srcBoundRect_Y="168.932053" srcOffset_X="10.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="649.866211" tarBoundRect_Y="262.067963" tarOffset_X="-48.000000" tarOffset_Y="2.000000" />
+        </line>
+        <line srcDeviceID="DEC98300-997A-4261-802D-E2C7B327CC43" destDeviceID="56B3E6F7-C762-4c9c-AF0C-55EB5D9A4E52">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="723.183777" srcBoundRect_Y="293.000000" srcOffset_X="-8.000000" srcOffset_Y="4.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="853.816223" tarBoundRect_Y="293.000000" tarOffset_X="-23.000000" tarOffset_Y="4.000000" />
+        </line>
+        <line srcDeviceID="DEC98300-997A-4261-802D-E2C7B327CC43" destDeviceID="FE150340-BD35-4314-B63F-F01BB590FB69">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="653.645081" srcBoundRect_Y="327.209015" srcOffset_X="-48.000000" srcOffset_Y="-13.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="555.354919" tarBoundRect_Y="454.790985" tarOffset_X="4.000000" tarOffset_Y="-3.000000" />
+        </line>
+        <line srcDeviceID="FE150340-BD35-4314-B63F-F01BB590FB69" destDeviceID="DE3E0A82-87D6-4277-A8F4-BAFDA1393F4C">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="502.213409" srcBoundRect_Y="455.127930" srcOffset_X="-50.000000" srcOffset_Y="0.000000" tarIndex="2" tarBoundRectIsMoved="1" tarBoundRect_X="400.786591" tarBoundRect_Y="326.872070" tarOffset_X="12.000000" tarOffset_Y="-3.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="1" filloption="1" color="16744448" upleftcorner="274,75" width="496" height="318" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="1" color="16777088" upleftcorner="300,93" width="296" height="249" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="2" filloption="1" color="16777088" upleftcorner="628,209" width="108" height="154" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="1" color="16744448" upleftcorner="381,416" width="299" height="155" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="2" filloption="1" color="8454143" upleftcorner="44,219" width="197" height="166" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="2" filloption="1" color="16744703" upleftcorner="805,235" width="192" height="140" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+    </shapes>
+    <txttips>
+        <txttip left="103" top="240" right="175" bottom="257" content="1.0.0.0/8" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="119" top="348" right="153" bottom="365" content="AS 1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="322" top="134" right="386" bottom="151" content="AS 65023" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="491" top="95" right="570" bottom="112" content="3.3.3.3/32" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="692" top="98" right="741" bottom="115" content="AS 234" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="653" top="231" right="717" bottom="248" content="AS 65004" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="864" top="245" right="936" bottom="262" content="5.0.0.0/8" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="883" top="344" right="917" bottom="361" content="AS 5" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="591" top="518" right="625" bottom="535" content="AS 8" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1008" top="42" right="1216" bottom="293" content="sys&#x0D;&#x0A;sys R2&#x0D;&#x0A;int g0/0/1&#x0D;&#x0A;ip add 23.0.0.2 24&#x0D;&#x0A;int lo 2&#x0D;&#x0A;ip add 2.2.2.2 32&#x0D;&#x0A;&#x0D;&#x0A;ospf 1 router-id 2.2.2.2&#x0D;&#x0A;a 0&#x0D;&#x0A;net 23.0.0.2 0.0.0.0&#x0D;&#x0A;net 2.2.2.2 0.0.0.0&#x0D;&#x0A;&#x0D;&#x0A;bgp 234&#x0D;&#x0A;peer 3.3.3.3 as 234&#x0D;&#x0A;peer 3.3.3.3 conn lo 2&#x0D;&#x0A;peer 3.3.3.3 next-hop-local" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1010" top="324" right="1256" bottom="653" content="sys&#x0D;&#x0A;sys R3&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 23.0.0.3 24&#x0D;&#x0A;int g0/0/1&#x0D;&#x0A;ip add 34.0.0.3 24&#x0D;&#x0A;int lo 3&#x0D;&#x0A;ip add 3.3.3.3 32&#x0D;&#x0A;&#x0D;&#x0A;ospf 1 router-id 3.3.3.3&#x0D;&#x0A;a 0&#x0D;&#x0A;net 23.0.0.3 0.0.0.0&#x0D;&#x0A;net 34.0.0.3 0.0.0.0&#x0D;&#x0A;net 3.3.3.3 0.0.0.0&#x0D;&#x0A;&#x0D;&#x0A;bgp 234&#x0D;&#x0A;group IBGP&#x0D;&#x0A;peer IBGP connect-interface lo 3&#x0D;&#x0A;peer IBGP next-hop-local&#x0D;&#x0A;peer 2.2.2.2 group IBGP&#x0D;&#x0A;peer 4.4.4.4 group IBGP" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1303" top="44" right="1511" bottom="295" content="sys&#x0D;&#x0A;sys R4&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 34.0.0.4 24&#x0D;&#x0A;int lo 4&#x0D;&#x0A;ip add 4.4.4.4 32&#x0D;&#x0A;&#x0D;&#x0A;ospf 1 router-id 4.4.4.4&#x0D;&#x0A;a 0&#x0D;&#x0A;net 34.0.0.4 0.0.0.0&#x0D;&#x0A;net 4.4.4.4 0.0.0.0&#x0D;&#x0A;&#x0D;&#x0A;bgp 234&#x0D;&#x0A;peer 3.3.3.3 as 234&#x0D;&#x0A;peer 3.3.3.3 conn lo 4&#x0D;&#x0A;peer 3.3.3.3 next-hop-local" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
