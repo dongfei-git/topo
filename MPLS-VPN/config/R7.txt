@@ -1,0 +1,33 @@
+sys
+sys R7
+int g0/0/0
+ip add 67.0.0.7 24
+int g0/0/1
+ip add 78.0.0.7 24
+int lo 7
+ip add 7.7.7.7 32
+
+ospf 1 router-id 7.7.7.7
+a 0
+net 67.0.0.0 0.0.0.255
+net 78.0.0.0 0.0.0.255
+net 7.7.7.7 0.0.0.0
+
+bgp 5678
+peer 6.6.6.6 as 5678
+peer 6.6.6.6 conn lo 7
+peer 6.6.6.6 next-hop-local
+peer 6.6.6.6 reflect-client
+peer 8.8.8.8 as 5678
+peer 8.8.8.8 conn lo 7
+peer 8.8.8.8 next-hop-local
+
+mpls lsr-id 7.7.7.7
+mpls
+mpls ldp
+int g0/0/0
+mpls
+mpls ldp
+int g0/0/1
+mpls
+mpls ldp

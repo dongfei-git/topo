@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="51CCA377-C341-4e05-93CF-766E1E48880A" name="AR6" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-D0-21-9D" com_port="2005" bootmode="0" cx="407.000000" cy="261.000000" edit_left="434" edit_top="315">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="2BAA0917-24FC-40b5-A9FE-B90040139872" name="AR7" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-5F-2D-48" com_port="2006" bootmode="0" cx="565.000000" cy="261.000000" edit_left="592" edit_top="315">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="E1146247-1F9A-4b06-BCCA-8FA2235AC219" name="AR2" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-BC-7D-EE" com_port="2001" bootmode="0" cx="43.000000" cy="455.000000" edit_left="70" edit_top="509">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="8595EE5F-BA65-460a-B097-9DE1671789E1" name="AR3" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-CC-4F-27" com_port="2002" bootmode="0" cx="904.000000" cy="103.000000" edit_left="931" edit_top="157">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="1E30874F-08FA-4228-AFDD-4056BA07968F" name="AR1" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-03-3A-98" com_port="2000" bootmode="0" cx="43.000000" cy="84.000000" edit_left="70" edit_top="138">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="2BC3C8F9-82F1-45ae-855E-01426925895E" name="AR5" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-73-7F-72" com_port="2004" bootmode="0" cx="248.000000" cy="261.000000" edit_left="275" edit_top="315">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="D7C26E89-AFA9-495c-A8C6-B8BBCC5F830F" name="AR8" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-20-65-B0" com_port="2007" bootmode="0" cx="717.000000" cy="260.000000" edit_left="744" edit_top="314">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+        <dev id="2770931A-66E1-4e16-B8FD-C4DB71221ADA" name="AR4" poe="0" model="AR2220" settings="" system_mac="00-E0-FC-87-7D-82" com_port="2003" bootmode="0" cx="920.000000" cy="470.000000" edit_left="947" edit_top="524">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="1" />
+                <interface sztype="Ethernet" interfacename="GE" count="2" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="1E30874F-08FA-4228-AFDD-4056BA07968F" destDeviceID="2BC3C8F9-82F1-45ae-855E-01426925895E">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="102.686050" srcBoundRect_Y="139.221619" srcOffset_X="-29.000000" srcOffset_Y="16.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="242.313950" tarBoundRect_Y="259.778381" tarOffset_X="-2.000000" tarOffset_Y="-21.000000" />
+        </line>
+        <line srcDeviceID="E1146247-1F9A-4b06-BCCA-8FA2235AC219" destDeviceID="2BC3C8F9-82F1-45ae-855E-01426925895E">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="101.365448" srcBoundRect_Y="452.317566" srcOffset_X="-45.000000" srcOffset_Y="-17.000000" tarIndex="1" tarBoundRectIsMoved="1" tarBoundRect_X="243.634552" tarBoundRect_Y="317.682434" tarOffset_X="-2.000000" tarOffset_Y="16.000000" />
+        </line>
+        <line srcDeviceID="2BC3C8F9-82F1-45ae-855E-01426925895E" destDeviceID="51CCA377-C341-4e05-93CF-766E1E48880A">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="318.183777" srcBoundRect_Y="288.000000" srcOffset_X="-3.000000" srcOffset_Y="8.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="390.816223" tarBoundRect_Y="288.000000" tarOffset_X="-30.000000" tarOffset_Y="-23.000000" />
+        </line>
+        <line srcDeviceID="51CCA377-C341-4e05-93CF-766E1E48880A" destDeviceID="2BAA0917-24FC-40b5-A9FE-B90040139872">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="477.183777" srcBoundRect_Y="288.000000" srcOffset_X="-11.000000" srcOffset_Y="9.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="548.816223" tarBoundRect_Y="288.000000" tarOffset_X="-28.000000" tarOffset_Y="-21.000000" />
+        </line>
+        <line srcDeviceID="2BAA0917-24FC-40b5-A9FE-B90040139872" destDeviceID="D7C26E89-AFA9-495c-A8C6-B8BBCC5F830F">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="635.182861" srcBoundRect_Y="287.715912" srcOffset_X="-9.000000" srcOffset_Y="5.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="700.817139" tarBoundRect_Y="287.284088" tarOffset_X="-26.000000" tarOffset_Y="-25.000000" />
+        </line>
+        <line srcDeviceID="D7C26E89-AFA9-495c-A8C6-B8BBCC5F830F" destDeviceID="8595EE5F-BA65-460a-B097-9DE1671789E1">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="777.072998" srcBoundRect_Y="259.232849" srcOffset_X="10.000000" srcOffset_Y="-1.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="897.927002" tarBoundRect_Y="157.767166" tarOffset_X="-25.000000" tarOffset_Y="19.000000" />
+        </line>
+        <line srcDeviceID="D7C26E89-AFA9-495c-A8C6-B8BBCC5F830F" destDeviceID="2770931A-66E1-4e16-B8FD-C4DB71221ADA">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="1" srcBoundRect_X="774.013672" srcBoundRect_Y="318.048615" srcOffset_X="10.000000" srcOffset_Y="-6.000000" tarIndex="0" tarBoundRectIsMoved="1" tarBoundRect_X="916.986328" tarBoundRect_Y="465.951385" tarOffset_X="3.000000" tarOffset_Y="-14.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="1" filloption="1" color="8454143" upleftcorner="271,210" width="479" height="221" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="2" filloption="1" color="65408" upleftcorner="11,30" width="257" height="153" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="2" filloption="1" color="65408" upleftcorner="735,42" width="257" height="153" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="2" filloption="1" color="16776960" upleftcorner="14,417" width="257" height="153" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="2" filloption="1" color="16776960" upleftcorner="747,418" width="257" height="153" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+    </shapes>
+    <txttips>
+        <txttip left="456" top="352" right="558" bottom="400" content="ISP&#x0D;&#x0A;AS 5678&#x0D;&#x0A;OSPF BGP MPLS" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="107" top="48" right="224" bottom="158" content="CE&#x0D;&#x0A;SiteA&#x0D;&#x0A;192.168.0.0/24&#x0D;&#x0A;RD: 1:1&#x0D;&#x0A;RT:&#x0D;&#x0A;  IN: 100:1&#x0D;&#x0A;  EX: 100:1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32768" charset="1" />
+        <txttip left="780" top="64" right="890" bottom="174" content="CE&#x0D;&#x0A;SiteA&#x0D;&#x0A;172.16.0.0/24&#x0D;&#x0A;RD: 1:1&#x0D;&#x0A;RT:&#x0D;&#x0A;  IN: 100:1&#x0D;&#x0A;  EX: 100:1" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-32768" charset="1" />
+        <txttip left="119" top="437" right="236" bottom="547" content="CE&#x0D;&#x0A;SiteB&#x0D;&#x0A;192.168.0.0/24&#x0D;&#x0A;RD: 2:2&#x0D;&#x0A;RT:&#x0D;&#x0A;  IN: 200:2&#x0D;&#x0A;  EX: 200:2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="791" top="439" right="901" bottom="549" content="CE&#x0D;&#x0A;SiteB&#x0D;&#x0A;172.16.0.0/24&#x0D;&#x0A;RD: 2:2&#x0D;&#x0A;RT:&#x0D;&#x0A;  IN: 200:2&#x0D;&#x0A;  EX: 200:2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-8355585" charset="1" />
+        <txttip left="262" top="220" right="281" bottom="237" content="PE" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="428" top="227" right="439" bottom="244" content="P" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="584" top="228" right="595" bottom="245" content="P" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="740" top="229" right="759" bottom="246" content="PE" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1025" top="406" right="1407" bottom="563" content="配置思路：&#x0D;&#x0A;确定VPN用户需求（用户数量、VPN数量、VPN实例数量）&#x0D;&#x0A;配置骨干网路由（PE、P间的IGP路由，保证IP连通性）&#x0D;&#x0A;配置骨干网MPLS（建立公网隧道）&#x0D;&#x0A;配置骨干网BGP（PE间常规BGP）&#x0D;&#x0A;&#x0D;&#x0A;配置VRF、RD、RT&#x0D;&#x0A;配置PE和CE之间的路由协议（静态、动态）&#x0D;&#x0A;配置IGP和BGP间的路由注入&#x0D;&#x0A;配置PE间的MP-BGP" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="198" top="195" right="247" bottom="212" content="static" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="779" top="207" right="813" bottom="224" content="ospf" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="158" top="355" right="185" bottom="372" content="BGP" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="54" top="527" right="88" bottom="544" content="AS 2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="915" top="540" right="949" bottom="557" content="AS 4" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1025" top="43" right="1316" bottom="169" content="sys&#x0D;&#x0A;sys R1&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 15.0.0.1 24&#x0D;&#x0A;int lo 1&#x0D;&#x0A;ip add 192.168.0.1 24&#x0D;&#x0A;ip route-static 172.16.0.0 24 15.0.0.5&#x0D;&#x0A;" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1341" top="45" right="1504" bottom="202" content="sys&#x0D;&#x0A;sys R2&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 25.0.0.2 24&#x0D;&#x0A;int lo 2&#x0D;&#x0A;ip add 192.168.0.2 24&#x0D;&#x0A;&#x0D;&#x0A;bgp 2&#x0D;&#x0A;peer 25.0.0.5 as 5678&#x0D;&#x0A;net 192.168.0.0 24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1025" top="202" right="1233" bottom="391" content="sys&#x0D;&#x0A;sys R3&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 38.0.0.3 24&#x0D;&#x0A;int lo 3&#x0D;&#x0A;ip add 172.16.0.3 24&#x0D;&#x0A;ospf network-type broadcast&#x0D;&#x0A;&#x0D;&#x0A;ospf 1 router-id 3.3.3.3&#x0D;&#x0A; a 0&#x0D;&#x0A;  net 38.0.0.0 0.0.0.255&#x0D;&#x0A;  net 172.16.0.0 0.0.0.255" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="1344" top="229" right="1507" bottom="386" content="sys&#x0D;&#x0A;sys R4&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 48.0.0.4 24&#x0D;&#x0A;int lo 4&#x0D;&#x0A;ip add 172.16.0.4 24&#x0D;&#x0A;&#x0D;&#x0A;bgp 4&#x0D;&#x0A;peer 48.0.0.8 as 5678&#x0D;&#x0A;net 172.16.0.0 24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="11" top="578" right="483" bottom="1828" content="sys&#x0D;&#x0A;sys R5&#x0D;&#x0A;int g0/0/2&#x0D;&#x0A;ip add 56.0.0.5 24&#x0D;&#x0A;int lo 5&#x0D;&#x0A;ip add 5.5.5.5 32&#x0D;&#x0A;&#x0D;&#x0A;ospf 1 router-id 5.5.5.5&#x0D;&#x0A;a 0&#x0D;&#x0A;net 56.0.0.0 0.0.0.255&#x0D;&#x0A;net 5.5.5.5 0.0.0.0&#x0D;&#x0A;&#x0D;&#x0A;bgp 5678&#x0D;&#x0A;peer 6.6.6.6 as 5678&#x0D;&#x0A;peer 6.6.6.6 conn lo 5&#x0D;&#x0A;peer 6.6.6.6 next-hop-local&#x0D;&#x0A;&#x0D;&#x0A;int lo 50&#x0D;&#x0A;ip add 50.50.50.50 32&#x0D;&#x0A;bgp 5678&#x0D;&#x0A;network 50.50.50.50 32&#x0D;&#x0A;&#x0D;&#x0A;mpls lsr-id 5.5.5.5&#x0D;&#x0A;mpls&#x0D;&#x0A;mpls ldp&#x0D;&#x0A;q&#x0D;&#x0A;int g0/0/2&#x0D;&#x0A;mpls&#x0D;&#x0A;mpls ldp&#x0D;&#x0A;q&#x0D;&#x0A;&#x0D;&#x0A;dis mpls ldp session&#x0D;&#x0A;&#x0D;&#x0A;ip vpn-instance SiteA-R1&#x0D;&#x0A; ipv4-family&#x0D;&#x0A;  route-distinguisher 1:1&#x0D;&#x0A;  vpn-target 100:1 export-extcommunity&#x0D;&#x0A;  vpn-target 100:1 import-extcommunity&#x0D;&#x0A;&#x0D;&#x0A;interface GigabitEthernet0/0/0&#x0D;&#x0A; ip binding vpn-instance SiteA-R1&#x0D;&#x0A; ip address 15.0.0.5 255.255.255.0&#x0D;&#x0A;&#x0D;&#x0A;dis ip routing-table vpn-instance SiteA-R1&#x0D;&#x0A;&#x0D;&#x0A;ip route-static vpn-instance SiteA-R1 192.168.0.0 24 15.0.0.1&#x0D;&#x0A;&#x0D;&#x0A;bgp 5678&#x0D;&#x0A;peer 8.8.8.8 as 5678&#x0D;&#x0A;peer 8.8.8.8 con lo 5&#x0D;&#x0A;ipv4-family vpnv4&#x0D;&#x0A; peer 8.8.8.8 enable&#x0D;&#x0A; &#x0D;&#x0A;dis bgp vpnv4 all brief&#x0D;&#x0A;dis bgp vpnv4 vpn-instance SiteA-R1 routing-table&#x0D;&#x0A;&#x0D;&#x0A;route-policy RPSA permit node 10&#x0D;&#x0A; if-match acl 2000&#x0D;&#x0A;acl 2000&#x0D;&#x0A; rule permit source 192.168.0.0 0&#x0D;&#x0A;&#x0D;&#x0A;bgp 5678&#x0D;&#x0A; ipv4-family vpn-instance SiteA-R1 &#x0D;&#x0A;  import-route static route-policy RPSA&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;ip vpn-instance SiteB-R1&#x0D;&#x0A; ipv4-family&#x0D;&#x0A;  route-distinguisher 2:2&#x0D;&#x0A;  vpn-target 200:2 export-extcommunity&#x0D;&#x0A;  vpn-target 200:2 import-extcommunity&#x0D;&#x0A;&#x0D;&#x0A;interface GigabitEthernet0/0/1&#x0D;&#x0A; ip binding vpn-instance SiteB-R1&#x0D;&#x0A; ip address 25.0.0.5 255.255.255.0&#x0D;&#x0A; q&#x0D;&#x0A;&#x0D;&#x0A;bgp 5678&#x0D;&#x0A; ipv4-family vpn-instance SiteB-R1&#x0D;&#x0A;  peer 25.0.0.2 as-number 2" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="494" top="579" right="709" bottom="1095" content="sys&#x0D;&#x0A;sys R6&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 56.0.0.6 24&#x0D;&#x0A;int g0/0/1&#x0D;&#x0A;ip add 67.0.0.6 24&#x0D;&#x0A;int lo 6&#x0D;&#x0A;ip add 6.6.6.6 32&#x0D;&#x0A;&#x0D;&#x0A;ospf 1 router-id 6.6.6.6&#x0D;&#x0A;a 0&#x0D;&#x0A;net 56.0.0.0 0.0.0.255&#x0D;&#x0A;net 67.0.0.0 0.0.0.255&#x0D;&#x0A;net 6.6.6.6 0.0.0.0&#x0D;&#x0A;&#x0D;&#x0A;bgp 5678&#x0D;&#x0A;peer 5.5.5.5 as 5678&#x0D;&#x0A;peer 5.5.5.5 conn lo 6&#x0D;&#x0A;peer 5.5.5.5 next-hop-local&#x0D;&#x0A;peer 5.5.5.5 reflect-client&#x0D;&#x0A;peer 7.7.7.7 as 5678&#x0D;&#x0A;peer 7.7.7.7 conn lo 6&#x0D;&#x0A;peer 7.7.7.7 next-hop-local&#x0D;&#x0A;&#x0D;&#x0A;mpls lsr-id 6.6.6.6&#x0D;&#x0A;mpls&#x0D;&#x0A;mpls ldp&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;mpls&#x0D;&#x0A;mpls ldp&#x0D;&#x0A;int g0/0/1&#x0D;&#x0A;mpls&#x0D;&#x0A;mpls ldp" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="718" top="581" right="926" bottom="1097" content="sys&#x0D;&#x0A;sys R7&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 67.0.0.7 24&#x0D;&#x0A;int g0/0/1&#x0D;&#x0A;ip add 78.0.0.7 24&#x0D;&#x0A;int lo 7&#x0D;&#x0A;ip add 7.7.7.7 32&#x0D;&#x0A;&#x0D;&#x0A;ospf 1 router-id 7.7.7.7&#x0D;&#x0A;a 0&#x0D;&#x0A;net 67.0.0.0 0.0.0.255&#x0D;&#x0A;net 78.0.0.0 0.0.0.255&#x0D;&#x0A;net 7.7.7.7 0.0.0.0&#x0D;&#x0A;&#x0D;&#x0A;bgp 5678&#x0D;&#x0A;peer 6.6.6.6 as 5678&#x0D;&#x0A;peer 6.6.6.6 conn lo 7&#x0D;&#x0A;peer 6.6.6.6 next-hop-local&#x0D;&#x0A;peer 6.6.6.6 reflect-client&#x0D;&#x0A;peer 8.8.8.8 as 5678&#x0D;&#x0A;peer 8.8.8.8 conn lo 7&#x0D;&#x0A;peer 8.8.8.8 next-hop-local&#x0D;&#x0A;&#x0D;&#x0A;mpls lsr-id 7.7.7.7&#x0D;&#x0A;mpls&#x0D;&#x0A;mpls ldp&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;mpls&#x0D;&#x0A;mpls ldp&#x0D;&#x0A;int g0/0/1&#x0D;&#x0A;mpls&#x0D;&#x0A;mpls ldp" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="933" top="581" right="1284" bottom="1691" content="sys&#x0D;&#x0A;sys R8&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;ip add 78.0.0.8 24&#x0D;&#x0A;int lo 8&#x0D;&#x0A;ip add 8.8.8.8 32&#x0D;&#x0A;&#x0D;&#x0A;ospf 1 router-id 8.8.8.8&#x0D;&#x0A;a 0&#x0D;&#x0A;net 78.0.0.0 0.0.0.255&#x0D;&#x0A;net 8.8.8.8 0.0.0.0&#x0D;&#x0A;&#x0D;&#x0A;bgp 5678&#x0D;&#x0A;peer 7.7.7.7 as 5678&#x0D;&#x0A;peer 7.7.7.7 conn lo 8&#x0D;&#x0A;peer 7.7.7.7 next-hop-local&#x0D;&#x0A;&#x0D;&#x0A;mpls lsr-id 8.8.8.8&#x0D;&#x0A;mpls&#x0D;&#x0A;mpls ldp&#x0D;&#x0A;int g0/0/0&#x0D;&#x0A;mpls&#x0D;&#x0A;mpls ldp&#x0D;&#x0A;&#x0D;&#x0A;bgp 5678&#x0D;&#x0A;peer 5.5.5.5 as 5678&#x0D;&#x0A;peer 5.5.5.5 con lo 8&#x0D;&#x0A;ipv4-family vpnv4&#x0D;&#x0A;peer 5.5.5.5 enable&#x0D;&#x0A;&#x0D;&#x0A;ip vpn-instance SiteA-R8&#x0D;&#x0A; ipv4-family&#x0D;&#x0A;  route-distinguisher 1:1&#x0D;&#x0A;  vpn-target 100:1 export-extcommunity&#x0D;&#x0A;  vpn-target 100:1 import-extcommunity&#x0D;&#x0A;&#x0D;&#x0A;interface GigabitEthernet0/0/1&#x0D;&#x0A; ip binding vpn-instance SiteA-R8&#x0D;&#x0A; ip address 38.0.0.8 255.255.255.0&#x0D;&#x0A;&#x0D;&#x0A;ospf 2 router-id 8.8.8.8 vpn-instance SiteA-R8&#x0D;&#x0A; a 0&#x0D;&#x0A; net 38.0.0.0 0.0.0.255&#x0D;&#x0A; import-route bgp&#x0D;&#x0A;&#x0D;&#x0A;dis ip routing-table vpn-instance SiteA-R8&#x0D;&#x0A;&#x0D;&#x0A;route-policy RPSA permit node 10&#x0D;&#x0A; if-match acl 2000&#x0D;&#x0A;acl 2000&#x0D;&#x0A; rule permit source 172.16.0.0 0&#x0D;&#x0A;&#x0D;&#x0A;bgp 5678&#x0D;&#x0A; ipv4-family vpn-instance SiteA-R8 &#x0D;&#x0A;  import-route ospf 2 route-policy RPSA&#x0D;&#x0A;  q&#x0D;&#x0A; q&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;ip vpn-instance SiteB-R8&#x0D;&#x0A; ipv4-family&#x0D;&#x0A;  route-distinguisher 2:2&#x0D;&#x0A;  vpn-target 200:2 export-extcommunity&#x0D;&#x0A;  vpn-target 200:2 import-extcommunity&#x0D;&#x0A;&#x0D;&#x0A;interface GigabitEthernet0/0/2&#x0D;&#x0A; ip binding vpn-instance SiteB-R8&#x0D;&#x0A; ip address 48.0.0.8 255.255.255.0&#x0D;&#x0A;&#x0D;&#x0A;bgp 5678&#x0D;&#x0A; ipv4-family vpn-instance SiteB-R8" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="836" top="362" right="863" bottom="379" content="BGP" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

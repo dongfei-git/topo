@@ -1,0 +1,80 @@
+sys
+sys R5
+int g0/0/2
+ip add 56.0.0.5 24
+int lo 5
+ip add 5.5.5.5 32
+
+ospf 1 router-id 5.5.5.5
+a 0
+net 56.0.0.0 0.0.0.255
+net 5.5.5.5 0.0.0.0
+
+bgp 5678
+peer 6.6.6.6 as 5678
+peer 6.6.6.6 conn lo 5
+peer 6.6.6.6 next-hop-local
+
+int lo 50
+ip add 50.50.50.50 32
+bgp 5678
+network 50.50.50.50 32
+
+mpls lsr-id 5.5.5.5
+mpls
+mpls ldp
+q
+int g0/0/2
+mpls
+mpls ldp
+q
+
+dis mpls ldp session
+
+ip vpn-instance SiteA-R1
+ ipv4-family
+  route-distinguisher 1:1
+  vpn-target 100:1 export-extcommunity
+  vpn-target 100:1 import-extcommunity
+
+interface GigabitEthernet0/0/0
+ ip binding vpn-instance SiteA-R1
+ ip address 15.0.0.5 255.255.255.0
+
+dis ip routing-table vpn-instance SiteA-R1
+
+ip route-static vpn-instance SiteA-R1 192.168.0.0 24 15.0.0.1
+
+bgp 5678
+peer 8.8.8.8 as 5678
+peer 8.8.8.8 con lo 5
+ipv4-family vpnv4
+ peer 8.8.8.8 enable
+ 
+dis bgp vpnv4 all brief
+dis bgp vpnv4 vpn-instance SiteA-R1 routing-table
+
+route-policy RPSA permit node 10
+ if-match acl 2000
+acl 2000
+ rule permit source 192.168.0.0 0
+
+bgp 5678
+ ipv4-family vpn-instance SiteA-R1 
+  import-route static route-policy RPSA
+
+
+ip vpn-instance SiteB-R1
+ ipv4-family
+  route-distinguisher 2:2
+  vpn-target 200:2 export-extcommunity
+  vpn-target 200:2 import-extcommunity
+
+interface GigabitEthernet0/0/1
+ ip binding vpn-instance SiteB-R1
+ ip address 25.0.0.5 255.255.255.0
+ q
+
+bgp 5678
+ ipv4-family vpn-instance SiteB-R1
+  peer 25.0.0.2 as-number 2

@@ -1,0 +1,7 @@
+sys
+sys R1
+int g0/0/0
+ip add 15.0.0.1 24
+int lo 1
+ip add 192.168.0.1 24
+ip route-static 172.16.0.0 24 15.0.0.5

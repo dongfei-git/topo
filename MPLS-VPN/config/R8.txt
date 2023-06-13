@@ -1,0 +1,71 @@
+sys
+sys R8
+int g0/0/0
+ip add 78.0.0.8 24
+int lo 8
+ip add 8.8.8.8 32
+
+ospf 1 router-id 8.8.8.8
+a 0
+net 78.0.0.0 0.0.0.255
+net 8.8.8.8 0.0.0.0
+
+bgp 5678
+peer 7.7.7.7 as 5678
+peer 7.7.7.7 conn lo 8
+peer 7.7.7.7 next-hop-local
+
+mpls lsr-id 8.8.8.8
+mpls
+mpls ldp
+int g0/0/0
+mpls
+mpls ldp
+
+bgp 5678
+peer 5.5.5.5 as 5678
+peer 5.5.5.5 con lo 8
+ipv4-family vpnv4
+peer 5.5.5.5 enable
+
+ip vpn-instance SiteA-R8
+ ipv4-family
+  route-distinguisher 1:1
+  vpn-target 100:1 export-extcommunity
+  vpn-target 100:1 import-extcommunity
+
+interface GigabitEthernet0/0/1
+ ip binding vpn-instance SiteA-R8
+ ip address 38.0.0.8 255.255.255.0
+
+ospf 2 router-id 8.8.8.8 vpn-instance SiteA-R8
+ a 0
+ net 38.0.0.0 0.0.0.255
+ import-route bgp
+
+dis ip routing-table vpn-instance SiteA-R8
+
+route-policy RPSA permit node 10
+ if-match acl 2000
+acl 2000
+ rule permit source 172.16.0.0 0
+
+bgp 5678
+ ipv4-family vpn-instance SiteA-R8 
+  import-route ospf 2 route-policy RPSA
+  q
+ q
+
+
+ip vpn-instance SiteB-R8
+ ipv4-family
+  route-distinguisher 2:2
+  vpn-target 200:2 export-extcommunity
+  vpn-target 200:2 import-extcommunity
+
+interface GigabitEthernet0/0/2
+ ip binding vpn-instance SiteB-R8
+ ip address 48.0.0.8 255.255.255.0
+
+bgp 5678
+ ipv4-family vpn-instance SiteB-R8

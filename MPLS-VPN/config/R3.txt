@@ -1,0 +1,12 @@
+sys
+sys R3
+int g0/0/0
+ip add 38.0.0.3 24
+int lo 3
+ip add 172.16.0.3 24
+ospf network-type broadcast
+
+ospf 1 router-id 3.3.3.3
+ a 0
+  net 38.0.0.0 0.0.0.255
+  net 172.16.0.0 0.0.0.255

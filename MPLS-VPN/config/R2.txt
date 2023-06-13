@@ -1,0 +1,10 @@
+sys
+sys R2
+int g0/0/0
+ip add 25.0.0.2 24
+int lo 2
+ip add 192.168.0.2 24
+
+bgp 2
+peer 25.0.0.5 as 5678
+net 192.168.0.0 24

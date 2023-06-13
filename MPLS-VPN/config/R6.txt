@@ -1,0 +1,33 @@
+sys
+sys R6
+int g0/0/0
+ip add 56.0.0.6 24
+int g0/0/1
+ip add 67.0.0.6 24
+int lo 6
+ip add 6.6.6.6 32
+
+ospf 1 router-id 6.6.6.6
+a 0
+net 56.0.0.0 0.0.0.255
+net 67.0.0.0 0.0.0.255
+net 6.6.6.6 0.0.0.0
+
+bgp 5678
+peer 5.5.5.5 as 5678
+peer 5.5.5.5 conn lo 6
+peer 5.5.5.5 next-hop-local
+peer 5.5.5.5 reflect-client
+peer 7.7.7.7 as 5678
+peer 7.7.7.7 conn lo 6
+peer 7.7.7.7 next-hop-local
+
+mpls lsr-id 6.6.6.6
+mpls
+mpls ldp
+int g0/0/0
+mpls
+mpls ldp
+int g0/0/1
+mpls
+mpls ldp
